@@ -64,9 +64,5 @@ footer="""
             color: white;
         }
     </style>
-
-    <div class="footer">
-        <p>Developed with ❤ by <a href="https://www.linkedin.com/in/sgvkamalakar" target="_blank">sgvkamalakar</a></p>
-    </div>
 """
 st.markdown(footer,unsafe_allow_html=True)
