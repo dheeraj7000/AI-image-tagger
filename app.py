@@ -32,37 +32,50 @@ if uploaded_file is not None:
                     st.error(f"Failed to configure API due to {error_msg}")
 footer="""
   <style>
-        a:link, a:visited {
-            color: blue;
-            text-decoration: dotted; /* Remove underline */
-        }
+    /* Link styling */
+    a:link, a:visited {
+        color: blue; /* Standard link color */
+        text-decoration: dotted; /* Dotted underline */
+    }
 
-        a:hover, a:active {
-            color: skyblue;
-        }
-        .footer .p{
-            font-size:10px;
-        }
+    a:hover, a:active {
+        color: skyblue; /* Hover and active state color */
+    }
 
-        /* Footer */
-        .footer {
-            position:fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height:10%;
-            font-size:15px;
-            color: white; 
-            text-align: center;
-            padding: 10px 0; 
-        }
-        .footer p{
-            font-size:20px;
-        }
+    /* Footer styling */
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 10%;
+        background-color: #001f3f; /* Dark blue background */
+        font-size: 15px;
+        color: white; 
+        text-align: center;
+        padding: 10px 0;
+        box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.3); /* Adds a shadow to the footer */
+    }
 
-        .footer a:hover {
-            color: white;
-        }
-    </style>
+    /* Paragraphs within the footer */
+    .footer p {
+        font-size: 20px;
+        color: #cce7ff; /* Light blue text color */
+        margin: 0;
+    }
+
+    /* Smaller text in footer */
+    .footer .p {
+        font-size: 10px;
+        color: #cce7ff; /* Light blue text color */
+    }
+
+    /* Hover effect for links within the footer */
+    .footer a:hover {
+        color: white; /* Change link color to white on hover */
+        text-decoration: none; /* Remove underline on hover */
+    }
+</style>
+
 """
 st.markdown(footer,unsafe_allow_html=True)
